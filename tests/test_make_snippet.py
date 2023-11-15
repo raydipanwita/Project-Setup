@@ -1,4 +1,4 @@
-from lib.diary import *
+from lib.make_snippet import *
 
 def test_make_snippet_for_words_empty_word():
     result = make_snippet("")
