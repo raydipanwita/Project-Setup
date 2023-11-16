@@ -16,8 +16,17 @@ def test_design_recipe2_punctutation():
     grammer = design_recipe2("ello world.")
     assert grammer == False
 
-def test_design_recipe2_punctutation_and_capital():
+def test_design_recipe2_fullstop_and_capital():
     grammer = design_recipe2("Hello world.")
+    assert grammer == True
+
+def test_design_recipe2_questionmark_and_capital():
+    grammer = design_recipe2("How r you?")
+    assert grammer == True
+
+
+def test_design_recipe2_exclamationmark_and_capital():
+    grammer = design_recipe2("Nice weather!")
     assert grammer == True
 
 def test_design_recipe3_todo():
