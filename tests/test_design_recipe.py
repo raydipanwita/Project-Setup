@@ -1,12 +1,24 @@
 from lib.design_recipe import *
 
-def test_design_recipe():
-    reading = design_recipe(5000)
-    assert reading == 25
+"""
+Given a text of 200 words
+it will return an estimate time of reading of 1 minute
+"""
 
-def test_design_recipe_highnum():
-    reading = design_recipe(25000)
-    assert reading == 125
+def test_design_recipe_for_200():
+    text = " ".join(["word" for i in range(0, 200)])
+    reading = design_recipe(text)
+    assert reading == 1
+
+def test_design_recipe_for_400():
+    text = " ".join(["word" for i in range (0, 400)])
+    reading = design_recipe(text)                                                                  
+    assert reading == 2
+
+def test_design_recipe_for_1000():
+    text = " ".join(["word" for i in range (0, 1000)])
+    reading = design_recipe(text)                                                                  
+    assert reading == 5
 
 def test_design_recipe2():
     grammer = design_recipe2("Hello world")
