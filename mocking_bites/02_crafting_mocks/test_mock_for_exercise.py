@@ -39,8 +39,7 @@ def test_assert_that_mock_was_called():
 
 # @pytest.mark.skip(reason="not yet implemented")
 def test_creates_mock_for_specific_case():
-    fake_diary = Mock()
-
+    fake_diary = Mock ()
     # Set up this mock to pass the tests below
     # ...
     fake_diary.count_entries.return_value = 2
