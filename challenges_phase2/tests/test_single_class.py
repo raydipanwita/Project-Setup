@@ -22,6 +22,7 @@ def test_reading_time_for_two_words():
     word = DiaryEntry("My Diary", "This is")
     result = word.reading_time(2)
     assert result == 1
+    
 
 
 def test_reading_time_for_five_words():

@@ -7,7 +7,6 @@ And search for a keyword
 I get a tracks matching that keyword
 """
 
-
 def test_search_by_keyword():
     library = MusicLibrary()
     fake_matching = Mock()
